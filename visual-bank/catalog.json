@@ -1,0 +1,1492 @@
+{
+  "schema_version": 1,
+  "name": "Teaching visuals bank",
+  "coordinate_system": "CSS pixels; native recipes preserve aspect ratio inside requested box",
+  "default_palette": {
+    "ink": "#006B68",
+    "accent": "#86BC25",
+    "light": "#E5F3EE",
+    "paper": "#FFFFFF",
+    "muted": "#9ACBC6"
+  },
+  "entries": [
+    {
+      "id": "teaching-with-ai",
+      "title": "AI in teaching and learning",
+      "topics": [
+        "ai",
+        "teaching",
+        "learning",
+        "education",
+        "curriculum"
+      ],
+      "block_types": [
+        "objective",
+        "topic",
+        "capability"
+      ],
+      "semantic_use": "Use for existing teaching or learning content involving AI. Open book and processor indicate the subject, without promising effectiveness.",
+      "avoid_when": [
+        "Do not use as evidence of learning gains or technical AI architecture.",
+        "Do not imply that physical AI hardware is required."
+      ],
+      "representation": "native_components",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "teaching-with-ai",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "asset": null,
+      "preview": "previews/teaching-with-ai.png",
+      "preview_sha256": "df03e5c43ba0c57adf0480da238b4f30a5f568de386c46e5fb62355f30dbcc56",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group.",
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Authored for this workflow; not copied from an external icon set.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group"
+    },
+    {
+      "id": "agent-configuration",
+      "title": "Agent skills and tasks",
+      "topics": [
+        "ai agent",
+        "agent",
+        "configuration",
+        "skills",
+        "tasks",
+        "tools",
+        "setup"
+      ],
+      "block_types": [
+        "objective",
+        "setup",
+        "components"
+      ],
+      "semantic_use": "Use when source content explicitly mentions giving an agent tools, skills or tasks. Editable component tiles and docking lines indicate configuration.",
+      "avoid_when": [
+        "Do not use to assert an actual software architecture or a specific number of agent modules.",
+        "Do not treat unlabeled tiles as new steps or success guarantees."
+      ],
+      "representation": "native_components",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "agent-configuration",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "asset": null,
+      "preview": "previews/agent-configuration.png",
+      "preview_sha256": "6c1aaaf9439721363f99a5c4f687f23dc3335b7fa71d4820e6c9c69fc5e9b03f",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group.",
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Authored for this workflow; not copied from an external icon set.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group"
+    },
+    {
+      "id": "accounting-automation",
+      "title": "Accounting automation context",
+      "topics": [
+        "accounting",
+        "automation",
+        "calculator",
+        "ledger",
+        "productivity"
+      ],
+      "block_types": [
+        "context",
+        "claim",
+        "comparison",
+        "history"
+      ],
+      "semantic_use": "Use beside existing accounting automation context. A blank ledger and calculator ground the topic without adding a timeline, numerical trend or conclusion.",
+      "avoid_when": [
+        "Do not equate the two pictured objects with a complete enumeration of automation waves.",
+        "Do not use as a factual chart or imply a causal sequence."
+      ],
+      "representation": "native_components",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "accounting-automation",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "asset": null,
+      "preview": "previews/accounting-automation.png",
+      "preview_sha256": "2b36ba462c6ec42a91ffc97865e0bbae240b707d575761aaccbdd195478120bc",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group.",
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Authored for this workflow; not copied from an external icon set.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group"
+    },
+    {
+      "id": "fluent-uncertain-output",
+      "title": "Fluent and variable output",
+      "topics": [
+        "ai",
+        "probabilistic",
+        "uncertainty",
+        "fluency",
+        "output",
+        "errors",
+        "limitations"
+      ],
+      "block_types": [
+        "claim",
+        "limitation",
+        "risk",
+        "contrast"
+      ],
+      "semantic_use": "Use beside source material about probabilistic or fluent output. Overlapping blank alternatives and a speech bubble depict variation and delivery.",
+      "avoid_when": [
+        "Do not interpret the three ellipsis dots or overlapping pages as probabilities, counts or evidence.",
+        "Do not use as a detected-error alarm or a guarantee that every output is wrong."
+      ],
+      "representation": "native_components",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "fluent-uncertain-output",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "asset": null,
+      "preview": "previews/fluent-uncertain-output.png",
+      "preview_sha256": "580f9dc88ce7e31cd8345a59a8a1b7a19099756d777e02f66c8446391e9dd1aa",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group.",
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Authored for this workflow; not copied from an external icon set.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group"
+    },
+    {
+      "id": "human-review",
+      "title": "Human review and judgment",
+      "topics": [
+        "review",
+        "reviewer",
+        "judgment",
+        "experience",
+        "verification",
+        "professional"
+      ],
+      "block_types": [
+        "claim",
+        "competency",
+        "review",
+        "responsibility"
+      ],
+      "semantic_use": "Use for source-described human examination or reviewer judgment. A professional, blank document and magnifying lens indicate the activity without a verdict.",
+      "avoid_when": [
+        "Do not imply that checking always succeeds or certifies correctness.",
+        "Do not use as a legal judgment or evidence of a real individual."
+      ],
+      "representation": "native_components",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "human-review",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "asset": null,
+      "preview": "previews/human-review.png",
+      "preview_sha256": "ba90a3331be1c04f967736b655b1b0921dba330bbd7124b4cbba6624f8fd15d6",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group.",
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Authored for this workflow; not copied from an external icon set.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group"
+    },
+    {
+      "id": "calculator",
+      "title": "Electronic calculator",
+      "topics": [
+        "calculator",
+        "arithmetic",
+        "accounting",
+        "automation"
+      ],
+      "block_types": [
+        "tool",
+        "history",
+        "stage"
+      ],
+      "semantic_use": "Use for an explicitly named calculator or arithmetic-tool topic. The display and keys are blank.",
+      "avoid_when": [
+        "Do not imply a calculation result, quantity or historical device specification."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "calculator",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/calculator.png",
+      "preview_sha256": "cc19a7fb61143cbb1bebb57299a7d5d207866428da611d196f90557b247a5cdb",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "spreadsheet",
+      "title": "Spreadsheet",
+      "topics": [
+        "spreadsheet",
+        "excel",
+        "visicalc",
+        "ledger",
+        "grid"
+      ],
+      "block_types": [
+        "tool",
+        "history",
+        "stage"
+      ],
+      "semantic_use": "Use for an explicitly named spreadsheet or ledger tool. The editable grid has no values.",
+      "avoid_when": [
+        "Do not treat its grid or highlighted cell as supplied data or a particular spreadsheet formula."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "spreadsheet",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/spreadsheet.png",
+      "preview_sha256": "c54f40e6be43bbdca33c088a659cb0d0d51646f0f906708f3e0d22461ee2b86d",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "connected-systems",
+      "title": "Connected systems",
+      "topics": [
+        "erp",
+        "systems",
+        "consolidation",
+        "database"
+      ],
+      "block_types": [
+        "tool",
+        "components",
+        "stage"
+      ],
+      "semantic_use": "Use for connected business systems or a source-described ERP context. Simple systems share a central data store.",
+      "avoid_when": [
+        "Do not claim a particular network architecture or technical implementation."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "connected-systems",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/connected-systems.png",
+      "preview_sha256": "536b93c7a34dc1b78941d48a7515c921f26676a22292d08d6ddc16fecad13f95",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "audit-sampling",
+      "title": "Audit document sampling",
+      "topics": [
+        "audit",
+        "sampling",
+        "caats",
+        "acl",
+        "idea",
+        "records"
+      ],
+      "block_types": [
+        "tool",
+        "process",
+        "stage"
+      ],
+      "semantic_use": "Use for source-described examination of records or audit sampling. The lens and blank record cells indicate the activity.",
+      "avoid_when": [
+        "Do not interpret cell count as a sample size or imply that the examined record passed."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "audit-sampling",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/audit-sampling.png",
+      "preview_sha256": "8061a4f3c7f18194a6e174de4c98ca419eec2915bc3b6813c88653a685c42c45",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "workflow-steps",
+      "title": "Preset workflow",
+      "topics": [
+        "workflow",
+        "steps",
+        "rpa",
+        "rules",
+        "automation"
+      ],
+      "block_types": [
+        "process",
+        "stage",
+        "capability"
+      ],
+      "semantic_use": "Use where source content describes a predetermined sequence or rule-based processing. Connected blank tiles represent steps.",
+      "avoid_when": [
+        "Do not map the three tiles to a specific step count unless supplied by the source."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "workflow-steps",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/workflow-steps.png",
+      "preview_sha256": "0aeeb41f9c301cd4d41384c5710222cfb525ff0d0e45b91611f0716a0e5ac191",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "document-set",
+      "title": "Written artifacts",
+      "topics": [
+        "documents",
+        "memo",
+        "workpaper",
+        "assessment",
+        "disclosure",
+        "artifacts"
+      ],
+      "block_types": [
+        "category",
+        "outputs",
+        "example"
+      ],
+      "semantic_use": "Use for a source-described family of written documents. Each page is blank.",
+      "avoid_when": [
+        "Do not interpret page count as a precise enumeration or insert unsourced document text."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "document-set",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/document-set.png",
+      "preview_sha256": "4058ff8c6d41748590bc6864adcde7dd85312ad3be9979b8a410dcccfe2083ba",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "alternative-outputs",
+      "title": "Alternative outputs",
+      "topics": [
+        "probabilistic",
+        "variation",
+        "answers",
+        "outputs",
+        "ai"
+      ],
+      "block_types": [
+        "claim",
+        "limitation",
+        "contrast"
+      ],
+      "semantic_use": "Use alongside a source statement that outputs can vary. A common processor is associated with blank alternatives.",
+      "avoid_when": [
+        "Do not infer probabilities, a correct alternative or actual model architecture."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "alternative-outputs",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/alternative-outputs.png",
+      "preview_sha256": "73e9a59ccb719e4a4f3606387ab63757a17d269229fdc3f88decb4b2eb4866d7",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "training-ladder",
+      "title": "Training ladder",
+      "topics": [
+        "training",
+        "apprenticeship",
+        "learning",
+        "judgment",
+        "experience"
+      ],
+      "block_types": [
+        "metaphor",
+        "claim",
+        "teaching"
+      ],
+      "semantic_use": "Use when the source explicitly discusses a training ladder or apprenticeship. A learner and ladder make that stated metaphor visible.",
+      "avoid_when": [
+        "Do not introduce this analogy where it changes the lesson, or assign the rungs specific qualifications."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "training-ladder",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/training-ladder.png",
+      "preview_sha256": "74e85d68f3a10cd63535e9cc07b1d8a3f8fcbaccaface47544afd818cbb44c52",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "classroom-adoption",
+      "title": "Classroom adoption",
+      "topics": [
+        "classroom",
+        "student",
+        "faculty",
+        "adoption",
+        "device"
+      ],
+      "block_types": [
+        "claim",
+        "context",
+        "education"
+      ],
+      "semantic_use": "Use for classroom adoption or student device-use content. The learner and teaching board indicate the setting.",
+      "avoid_when": [
+        "Do not infer adoption percentages, teacher incompetence or a timeline from the illustration."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "classroom-adoption",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/classroom-adoption.png",
+      "preview_sha256": "b4c2250abc3da963b085f55f8e6141c0f969cd39f7a9393deff6c67f244556fb",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "task-duration",
+      "title": "Task duration",
+      "topics": [
+        "duration",
+        "time",
+        "task",
+        "horizon",
+        "timing"
+      ],
+      "block_types": [
+        "metric",
+        "qualifier",
+        "context"
+      ],
+      "semantic_use": "Use as a qualitative duration cue beside source-supplied time measures. The hourglass has no scale.",
+      "avoid_when": [
+        "Never substitute its sand amount for a measured value, progress indicator or performance chart."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "task-duration",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/task-duration.png",
+      "preview_sha256": "df93cda70ce2573426162d8f48d2f90c8a68d921d6dccca0d181be6a2753747b",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "verification-lens",
+      "title": "Document verification",
+      "topics": [
+        "verification",
+        "reliability",
+        "limits",
+        "review",
+        "accountability"
+      ],
+      "block_types": [
+        "qualifier",
+        "review",
+        "limitation"
+      ],
+      "semantic_use": "Use beside existing source material about examination or verification. A blank document and lens show an activity.",
+      "avoid_when": [
+        "Do not imply a correctness verdict, successful verification or certified compliance."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "verification-lens",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/verification-lens.png",
+      "preview_sha256": "a77768db8218c63adbd9cf8a6c713cc77b0c1653d8bdcea50669ae5e40bcd27c",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "prompt-generation",
+      "title": "Prompt and output",
+      "topics": [
+        "prompt",
+        "generation",
+        "gen ai",
+        "output",
+        "strengths"
+      ],
+      "block_types": [
+        "capability",
+        "process",
+        "category"
+      ],
+      "semantic_use": "Use where source text describes prompting and generated output. A blank bubble and page represent those elements.",
+      "avoid_when": [
+        "Do not imply persisted memory, autonomous operation or factual correctness unless supported."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "prompt-generation",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/prompt-generation.png",
+      "preview_sha256": "5de5156d5d311e6525d03f68921f0038e70436cdea1b6125d0eb47e79ee6709f",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "multi-agent",
+      "title": "Agent coordination",
+      "topics": [
+        "multi-agent",
+        "agentic ai",
+        "coordination",
+        "orchestration"
+      ],
+      "block_types": [
+        "capability",
+        "components"
+      ],
+      "semantic_use": "Use for source-described multi-agent coordination. Connected processors are a conceptual cue.",
+      "avoid_when": [
+        "Do not claim a particular agent count, system topology or autonomy level from the icon."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "multi-agent",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/multi-agent.png",
+      "preview_sha256": "abaa65b0bb5f0ba3e522dd369ed4b3c081c5bb31f5a2e9fc2525c8501b6edfba",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "prompt-goal",
+      "title": "Prompt goal and constraints",
+      "topics": [
+        "prompt",
+        "goal",
+        "constraints",
+        "instructions"
+      ],
+      "block_types": [
+        "configuration",
+        "goal"
+      ],
+      "semantic_use": "Use for a source-defined prompt, goal or constraints block. Blank instructions sit beside an unnumbered target.",
+      "avoid_when": [
+        "Do not imply that the goal was achieved or invent instructions."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "prompt-goal",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/prompt-goal.png",
+      "preview_sha256": "a9c54096456950f5fe9d9f1b7951784bb9001b56664b2dc36ae5becf2e3ac1b5",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "reusable-skill",
+      "title": "Reusable instruction skill",
+      "topics": [
+        "skill",
+        "reusable",
+        "instructions",
+        "tool"
+      ],
+      "block_types": [
+        "configuration",
+        "procedure"
+      ],
+      "semantic_use": "Use for an existing reusable-instructions or skill topic. A blank instruction card and tool tile indicate reuse of a procedure.",
+      "avoid_when": [
+        "Do not imply that an instruction file automatically registers a tool or grants permissions."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "reusable-skill",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/reusable-skill.png",
+      "preview_sha256": "43e609b271661d0f492ba67c8111274cfc552f7d6ca07cc0d3bf5369cb7d9b8e",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "document-memory",
+      "title": "Documents and context",
+      "topics": [
+        "memory",
+        "documents",
+        "context",
+        "knowledge"
+      ],
+      "block_types": [
+        "configuration",
+        "resources"
+      ],
+      "semantic_use": "Use where the source names documents or context supplied to a system. Blank pages in a folder indicate resources.",
+      "avoid_when": [
+        "Do not imply indefinite memory, completeness, retrieval accuracy or data access not stated in the source."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "document-memory",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/document-memory.png",
+      "preview_sha256": "1652d255b8d833bebcb2612d787b1c7d355f5f0e0dfb3582a47d980bae3f99d8",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "tools-permissions",
+      "title": "Tools and permissions",
+      "topics": [
+        "tools",
+        "permissions",
+        "harness",
+        "data",
+        "access"
+      ],
+      "block_types": [
+        "configuration",
+        "boundary"
+      ],
+      "semantic_use": "Use for a source-defined tool/data/permission boundary. A tool case and lock indicate the category.",
+      "avoid_when": [
+        "Do not treat the lock as a compliance guarantee or assert a particular authorization model."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "tools-permissions",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/tools-permissions.png",
+      "preview_sha256": "981afb243f4a3fa51509e53b35371d638962300afb33bc721f43aba4c8dffb2a",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "institution-tool",
+      "title": "Institutional application",
+      "topics": [
+        "institution",
+        "university",
+        "approved tool",
+        "copilot",
+        "application"
+      ],
+      "block_types": [
+        "category",
+        "tool"
+      ],
+      "semantic_use": "Use for the institution/application category explicitly stated in source content. The building and application are generic.",
+      "avoid_when": [
+        "Do not invent an approval badge, official logo or security guarantee."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "institution-tool",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/institution-tool.png",
+      "preview_sha256": "171280fa10144587f621742f67c5e118cec67d4b644b15a0d2bae67eb876a1a4",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "network-access",
+      "title": "Network application access",
+      "topics": [
+        "network",
+        "vpn",
+        "access",
+        "tools",
+        "application"
+      ],
+      "block_types": [
+        "category",
+        "tool"
+      ],
+      "semantic_use": "Use alongside a source-described network access category. A globe and application indicate access context.",
+      "avoid_when": [
+        "Do not present it as VPN configuration guidance, an endorsement or institutional data authorization."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "network-access",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/network-access.png",
+      "preview_sha256": "e12a71cdccb61d1c9c98ef16b674247fd4fd24d15ad3daba060f74a95a3d09cd",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    },
+    {
+      "id": "model-comparison",
+      "title": "Application comparison",
+      "topics": [
+        "comparison",
+        "model",
+        "tool",
+        "capability",
+        "technology"
+      ],
+      "block_types": [
+        "comparison",
+        "category"
+      ],
+      "semantic_use": "Use for neutral comparison of source-mentioned tools. Neither blank application is labeled as the winner.",
+      "avoid_when": [
+        "Do not encode comparative performance, rankings or a benchmark result through visual differences."
+      ],
+      "representation": "native_components",
+      "asset": null,
+      "provenance": {
+        "kind": "original_native_recipe",
+        "author_role": "Executioner",
+        "source": "Original native component geometry authored for this workflow.",
+        "usage_terms": "Original project-authored geometry and preview; MIT License. See ../LICENSE and ../NOTICE.md."
+      },
+      "selection_unit": "native_group",
+      "recipe": {
+        "module": "recipes.mjs",
+        "export": "addVisual",
+        "id": "model-comparison",
+        "module_sha256": "561367fafb0b99c67c5317e61fc716c4754cf4a5dc53529c0c9c8a09072796d3",
+        "post_export": {
+          "module": "group_components.py",
+          "module_sha256": "3fa473ae1e79cf033cdf14f7086b611eb422e9c31336b7c476ee29fbff99a5cb",
+          "arguments": "INPUT.pptx OUTPUT.pptx --groups-json GROUPS.json --report REPORT.json",
+          "scope": "One group specification per topic, with exact names returned by the recipe.",
+          "purpose": "Automatically deliver a single top-level native group per topic; remove grouping locks only from its selected children.",
+          "native_validation_required": "Directly select the delivered parent group, move and resize it, edit a representative child, save and reopen."
+        }
+      },
+      "preview": "previews/model-comparison.png",
+      "preview_sha256": "2bd96e541193e741ff559238a1dc3dc0856968ebd9c4bfb4f56f97d7078d5c35",
+      "design_box": {
+        "width": 120,
+        "height": 80,
+        "units": "CSS pixels"
+      },
+      "parameters": [
+        "left",
+        "top",
+        "width",
+        "height",
+        "prefix",
+        "palette"
+      ],
+      "editability": "One pre-grouped PowerPoint visual after the required export packaging step. Move and resize with one selection; native children remain editable inside the group."
+    }
+  ],
+  "delivery_default": "one_group_or_picture_per_topic",
+  "post_export_required_for_native_recipes": true
+}

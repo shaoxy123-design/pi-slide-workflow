@@ -1,0 +1,30 @@
+{
+  "input_pptx": "lecture.pptx",
+  "request": "Improve this lecture deck. Preserve all content; improve readability and proactively add a topic-specific visual to each meaningful block where useful. Keep visuals separately adjustable and explain omissions.",
+  "host": "Pi",
+  "mode": "local",
+  "selected_slides": "all",
+  "content_policy": "preserve_exact",
+  "editability": "native_core_replaceable_artwork",
+  "style": "follow_source_branding_with_clear_academic_layout",
+  "visuals": {
+    "selection_unit": "one_group_or_picture_per_topic",
+    "scope": "aggressive_topic_coverage",
+    "bank_catalog": "visual-bank/catalog.json",
+    "coverage_required": true,
+    "allowed_types": [
+      "illustration",
+      "figure",
+      "comic"
+    ],
+    "new_factual_text_allowed": false
+  },
+  "custom_features": [],
+  "authorizations": [],
+  "clarification_answers": [],
+  "deliverables": [
+    "editable_pptx",
+    "preview",
+    "change_and_review_report"
+  ]
+}

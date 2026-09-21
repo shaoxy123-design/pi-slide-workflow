@@ -1,0 +1,22 @@
+---
+name: ppt-review
+description: Use when reviewing an improved PowerPoint deck for content fidelity, native editability, visual quality and requested-feature completion.
+---
+
+# Review the actual candidate
+
+Read [shared rules](../../AGENTS.md), request and plan. Treat the execution log as a claim to verify. Do not edit slides. Record the candidate SHA-256 before reviewing.
+
+1. **Content gate.** Run the strict guard against the untouched baseline. Inspect its findings and coverage limits. Compare visible source/candidate text, math, captions, charts and qualifiers in context. Inspect notes, chart data and label associations; invisible retained text does not excuse missing visible content. For intentional changes, match each difference to an exact authorization and confirm everything outside scope stayed intact. Keep the raw machine failure and report separately adjudicated results.
+2. **Editability gate.** Inspect native object types and underlying data, especially every changed text/table/chart/equation/diagram. Confirm core content was not replaced with artwork. Each topic visual must be one already-existing top-level native group or separate picture; verify its parent/child mapping and reject loose recipe fragments. Require a demonstration on an Executioner-owned disposable copy: move/resize the delivered parent directly and edit a native child where applicable. Independently assess the receipt and object structure; request missing demonstrations through the Planner rather than editing the deck yourself. Do not accept a test that first creates a group as proof the delivered file was grouped. Report actual checks, inherited raster elements and unresolved limits. Missing native-object evidence is UNVERIFIED.
+3. **Visual gate.** Inspect a whole-deck contact sheet, then every changed slide at readable size. Check clipping, overlaps, contrast, font substitution, evidence legibility, distorted figures, label alignment, reading order and generated-image accuracy. Contact sheets alone are insufficient for dense equations or charts. Inspect unchanged slides affected by master/theme edits too.
+4. **Requirements gate.** Map every required feature to evidence and a pass/fail/unverified result. Compare `visual-coverage.json` with the actual meaningful blocks: verify topic fit, distinct useful visual treatment, actual object names and omission reasons. A visual for every explicitly requested block is required; generic symbols or invisible/off-slide objects do not count. Check whether arrows, probability marks, ranking, scales or comic expressions introduce unsupported meaning even when textual comparison passes. Confirm that more visuals did not compromise readable content, and check branding, accessibility, selected slide scope and requested exports/animations as applicable.
+5. **File gate.** Confirm the candidate opens through the available supported backend, slide count/order match the plan, required objects/data are retained, previews correspond to this candidate, and there is no known corruption. Report which application or renderer was used; never claim a PowerPoint check without one.
+
+Return `review.json` following [contracts](../../docs/contracts.md). Zero unresolved blockers and all required gates passed are necessary for PASS or PASS_WITH_AUTHORIZED_DIFFS. The latter is a deliverable pass only when every detected difference is matched to explicit scoped permission (or verified equivalent representation), with raw evidence retained. Do not average away content loss with an aesthetic score. A source-file fallback is not a passed improvement.
+
+For each repaired candidate, rerun the full content guard, inspect repaired slides and any affected masters/layouts, refresh the contact sheet, and bind the updated review to its hash. The Planner delivers only matching evidence. Elapsed time never changes a gate result. Report specific missing checks or blockers for further work.
+
+For PDF sources, follow [PDF intake](../../docs/pdf-input.md): compare reconstructed and final slides against the original PDF and source page map. A passing PPTX guard cannot validate the preceding conversion. Require native core objects or explicit scoped editability exceptions.
+
+For comparisons, use [the benchmark protocol](../../docs/benchmark-protocol.md). Keep content preservation, native editability, visual ratings and elapsed time separate. A passed content guard is not a completed human fidelity review, and unknown measurements are not zero defects.

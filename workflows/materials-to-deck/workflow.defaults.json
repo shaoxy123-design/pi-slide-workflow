@@ -1,0 +1,23 @@
+{
+  "workflow": "materials_to_deck",
+  "mode": "local",
+  "content_policy": "faithful_synthesis_of_supplied_materials",
+  "research_scope": "supplied_sources_only",
+  "editability": "native_core_replaceable_artwork",
+  "language": "follow_request_else_source_language",
+  "slide_count": "derive_from_brief_and_required_coverage",
+  "style": "follow_supplied_template_else_clear_academic_layout",
+  "source_citations": "short_visible_citations_with_full_locators_in_notes_and_source_map",
+  "visual_policy": {
+    "scope": "aggressive_topic_coverage",
+    "bank_catalog": "visual-bank/catalog.json",
+    "selection_unit": "one_group_or_picture_per_topic",
+    "group_before_delivery": true,
+    "omissions_require_reason": true
+  },
+  "fictional_examples": "require_scoped_authorization",
+  "translation": "require_scoped_authorization",
+  "outline_approval": "only_if_requested_or_required_question_unresolved",
+  "max_questions_per_batch": 3,
+  "repair_policy": "until_required_checks_pass_or_a_concrete_blocker_is_reported"
+}

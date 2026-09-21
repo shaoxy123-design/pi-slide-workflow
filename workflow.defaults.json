@@ -1,0 +1,21 @@
+{
+  "mode": "local",
+  "content_policy": "preserve_exact",
+  "editability": "native_core_replaceable_artwork",
+  "selected_slides": "all",
+  "style": "follow_source_branding_with_clear_academic_layout",
+  "visual_scope": "aggressive_topic_coverage",
+  "visual_policy": {
+    "planning_unit": "meaningful_content_block",
+    "default_action": "add_or_reuse_a_topic_specific_visual_when_it_improves_comprehension_or_recall",
+    "bank_catalog": "visual-bank/catalog.json",
+    "prefer": "native_groups_for_diagrams_single_pictures_for_illustrations",
+    "selection_unit": "one_group_or_picture_per_topic",
+    "group_before_delivery": true,
+    "coverage_record": "visual-coverage.json",
+    "omissions_require_reason": true,
+    "new_factual_content_allowed": false
+  },
+  "repair_policy": "until_required_checks_pass_or_a_concrete_blocker_is_reported",
+  "max_questions_per_batch": 3
+}

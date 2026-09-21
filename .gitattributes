@@ -1,0 +1,3 @@
+# Keep catalog-bound module bytes stable when cloned on Windows or Unix.
+/visual-bank/recipes.mjs text eol=lf
+/visual-bank/group_components.py text eol=lf

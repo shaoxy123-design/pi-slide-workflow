@@ -1,0 +1,17 @@
+{
+  "workflow": "materials_to_deck",
+  "materials": [],
+  "request": "Build a new editable slide deck from the supplied materials. Summarize and reorganize faithfully, preserve the evidence and its limitations, cite sources and add useful grouped visuals.",
+  "audience": null,
+  "objective": null,
+  "required_topics": [],
+  "slide_count_target": null,
+  "talk_duration_minutes": null,
+  "language": null,
+  "template_path": null,
+  "research_scope": "supplied_sources_only",
+  "custom_features": [],
+  "authorizations": [],
+  "clarification_answers": [],
+  "deliverables": ["editable_pptx", "preview", "source_map", "change_and_review_report"]
+}
